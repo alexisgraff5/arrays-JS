@@ -46,8 +46,7 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 
   //Code Here
   function reversedLooper(letters) {
-    letters.reverse();
-    for (i = 0; i < letters.length; i++) {
+    for (i = letters.length - 1; i >= 0; i--) {
       alert(letters[i]);
     }
   }
@@ -61,12 +60,14 @@ var nums = [1,2,3,6,22,98,45,23,22,12];
 
   //Code Here
   function evenFinder(nums) {
-    for (i = 0; i < nums.length; i++) {
-      if (nums[i] % 1) {
-        nums.splice(i, 1);
+    var even = [];
+
+    for (var i = 0; i < nums.length; i++) {
+      if (nums[i] % 2 === 0) {
+        even.push(nums[i]);
       }
     }
-    return nums;
+    return even;
   }
 
 
@@ -77,9 +78,10 @@ var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
 //Write a function called divider that is given one argument, numbersArray.
 //Have divider return an Array with the first item in the array being the evens array (all the even values from nums) and the second item in the Array being the odds array(all the odd values from nums).
 
-
-
   //Code Here
+  function divider(numbersArray){
+    
+  }
 
 
 //Next Problem
