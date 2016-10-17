@@ -154,6 +154,9 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 */
 
   //Code Here
+  function removeItem(myGroceryList, item) {
+
+  }
 
 //removeItem(myGroceryList, 'chips') --> ['pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 //addItem(myGroceryList, 'Jerky') --> ['pizza', 'hotpockets', 'MtnDew', 'corndogs', 'Jerky'];
@@ -167,6 +170,10 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 //Write a function called maker that creates an array, fills that array with numbers from 1 to 215, then returns the array.
 
   //Code Here
+  function maker() {
+    var arr = [];
+  }
+  console.log(arr);
 
 
 
@@ -178,6 +185,9 @@ var numbers = [5, '9', 16, 19, '25', '34', 48];
 //array after adding ten to each item in numbers. *Verify your answer is correct. --> [15, 19, 26, 29, 35, 44, 58]
 
   //Code Here
+  function addTen(numbers) {
+
+  }
 
 
 
@@ -199,6 +209,13 @@ for(var i = 0; i < num2; i++){
 //Write a function called 'longer' that is given arr1 and arr2 as it's only arguments. Return the array which is longest.
 
   //Code Here
+  function longer(arr1, arr2) {
+    if (arr1.length > arr2.length) {
+      return arr1;
+    } else {
+      return arr2;
+    }
+  }
 
 
 /*As a continuation of the previous problem, write another function called 'both'.
