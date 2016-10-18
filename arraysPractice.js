@@ -154,20 +154,30 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 */
 
   //Code Here
-  function removeItem(myGroceryList, item) {
-    for (var i = 0; i < myGroceryList.length; i++) {
-      if (item === myGroceryList[i]) {
+  /*function removeItem(myGroceryList, item) {
+      var deleteItem = myGroceryList.indexOf(item);
+      if (deleteItem !== -1) {
         myGroceryList.splice(i, 1);
-        return myGroceryList;
       }
       return myGroceryList;
     }
-  }
 
   function addItem(myGroceryList, item) {
-    for (var i = 0; i < myGroceryList.length; i++) {
-    }
+    myGroceryList.push(item);
+    return myGroceryList;
+  }*/
+  var removeItem = function(myGroceryList, removeItem) {
+  var i = myGroceryList.indexOf(removeItem);
+  if (i !== -1) {
+    myGroceryList.splice(i, 1);
   }
+  return myGroceryList;
+};
+
+var addItem = function(myGroceryList, item) {
+  myGroceryList.push(item);
+  return myGroceryList;
+};
 
 //removeItem(myGroceryList, 'chips') --> ['pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 //addItem(myGroceryList, 'Jerky') --> ['pizza', 'hotpockets', 'MtnDew', 'corndogs', 'Jerky'];
