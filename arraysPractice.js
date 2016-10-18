@@ -199,6 +199,10 @@ var addItem = function(myGroceryList, item) {
   //Code Here
   function maker() {
     var arr = [];
+    for (var i = 1; arr.length < 215; i++) {
+      arr.push(i);
+    }
+    return arr;
   }
 
 
