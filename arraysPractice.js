@@ -261,10 +261,35 @@ for(var i = 0; i < num2; i++){
 */
 
   //Code Here
-  function both(arr1, arr2) {
-    var bothArr = [];
 
+/*  function both(arr1, arr2) {
+    var bothArr = arr1.concat(arr2);
+    var matches = [];
+    for (var i = 0; i < bothArr.length; i++) {
+      if (matches.indexOf(bothArr[i]) > -1) {
+
+      } else {
+        matches.push(bothArr[i]);
+      }
+    }
+    console.log(matches);
+    return matches;
+} */
+
+function both(arr1, arr2) {
+  var bothArr = [];
+  for (var i = 0; i < arr1.length; i++) {
+    for (var j = 0; j < arr2.length; j++) {
+      if (arr1[i] === arr2[j]) {
+        bothArr.push(arr1[i]);
+      }
+    }
   }
+  return bothArr;
+}
+
+
+
 
 
 
