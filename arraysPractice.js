@@ -167,6 +167,9 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
     return myGroceryList;
   }*/
   var removeItem = function(myGroceryList, removeItem) {
+    if (!myGroceryList) {
+      return [];
+    }
   var i = myGroceryList.indexOf(removeItem);
   if (i !== -1) {
     myGroceryList.splice(i, 1);
@@ -175,6 +178,9 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 };
 
 var addItem = function(myGroceryList, item) {
+  if (!myGroceryList) {
+    return [];
+  }
   myGroceryList.push(item);
   return myGroceryList;
 };
