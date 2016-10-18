@@ -347,7 +347,22 @@ var user1 = {
     username: 'infiniateLoop'
 };
 
+var user2 = {
+    name: "Jane Doe",
+    email: "jane.doe@swift.com",
+    password: "sWeetApplePie",
+    username: "janedoe56"
+};
+
+var user3 = {
+    name: "John Doe",
+    email: "john.doe@swift.com",
+    password: "SWeetPecanPie",
+    username: "johndoe45"
+};
+
 //Your Code Here
+users.push(user1, user2, user3);
 
 /*Now you have a very common data structure. Twitter is a good use case.
 It's easy to imagine that your followers list on Twitter is an Array full or objects
@@ -358,5 +373,11 @@ objects until you find Tyler's account (use tylermcginnis33@gmail.com to find hi
 Once you find the particular index he's located in, delete him from the array.*/
 
   //Code Here
+  for (var i = 0; i < users.length; i++) {
+    if (users[i].email === "tylermcginnis33@gmail.com") {
+      users.splice(i, 1);
+    }
+  }
+  console.log(users);
 
 //The activity we just did is very much how data works in 'the real world'.
